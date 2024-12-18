@@ -1,8 +1,7 @@
 <?php
-include_once ("lib/fonksiyon.php");
-$sinif = new kurumsal;
+include_once("lib/fonksiyon.php");
+$sinif=new kurumsal; 
 ?>
-
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -15,7 +14,10 @@ $sinif = new kurumsal;
   <meta name="keywords" content="<?php echo $sinif->metakey; ?>">
   <meta name="author" content="<?php echo $sinif->metaaut; ?>">
   <meta name="owner" content="<?php echo $sinif->metaown; ?>">
-  <meta name="copyright" content="<?php echo $sinif->metacopy; ?>" <!-- Fontlar -->
+  <meta name="copyright" content="<?php echo $sinif->metacopy; ?>"
+
+
+  <!-- Fontlar -->
   <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
     rel="stylesheet">
@@ -46,18 +48,17 @@ $sinif = new kurumsal;
     <div class="container clearfix">
 
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i><a
-          href="mailto: <?php echo $sinif->mailadres; ?>"><?php echo $sinif->mailadres; ?></a>
-        <i class="fa fa-phone"></i><a href="tel: <?php echo $sinif->telno; ?>"><?php echo $sinif->telno; ?></a>
+        <i class="fa fa-envelope-o"></i><a href="mailto: <?php echo $sinif-> mailadres ; ?>"><?php echo $sinif-> mailadres ; ?></a>
+        <i class="fa fa-phone"></i><a href="tel: <?php echo $sinif-> telno ; ?>"><?php echo $sinif-> telno ; ?></a>
       </div>
 
 
       <div class="social_links float-right">
-        <a href="<?php echo $sinif->twit; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="<?php echo $sinif->face; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="<?php echo $sinif->inst; ?>" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="<?php echo $sinif->linkd; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="<?php echo $sinif->gith; ?>" class="github"><i class="fa fa-github"></i></a>
+        <a href="<?php echo $sinif-> twit ; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="<?php echo $sinif-> face ; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="<?php echo $sinif-> inst ; ?>" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="<?php echo $sinif-> linkd ; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="<?php echo $sinif-> gith ; ?>" class="github"><i class="fa fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -68,8 +69,7 @@ $sinif = new kurumsal;
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto"><?php echo $sinif->logoyazi; ?> <span>
-              <?php echo $sinif->logoyazisiyah; ?></span></a></h1>
+        <h1><a href="#body" class="scrollto"><?php echo $sinif-> logoyazi ; ?> <span> <?php echo $sinif-> logoyazisiyah ; ?></span></a></h1>
         <!-- #body etiketi sayfayı yukarı atmıyor -->
       </div>
 
@@ -93,20 +93,17 @@ $sinif = new kurumsal;
   <section id="intro">
 
     <div class="intro-content">
-      <h2>
-        <?php echo $sinif->slogan; ?>
-      </h2>
+      <h2><?php echo $sinif-> slogan; ?></h2>
 
     </div>
-
 
     <div id="intro-carousel" class="owl-carousel">
-
-      <?php $sinif->intro($baglanti); ?>
-
+      <div class="item" style="background-image:url('img/carousel/1.jpg');"></div>
+      <div class="item" style="background-image:url('img/carousel/2.jpg');"></div>
+      <div class="item" style="background-image:url('img/carousel/3.jpg');"></div>
+      <div class="item" style="background-image:url('img/carousel/4.jpg');"></div>
+      <div class="item" style="background-image:url('img/carousel/5.jpg');"></div>
     </div>
-
-
 
   </section>
 
@@ -120,8 +117,31 @@ $sinif = new kurumsal;
     <section id="hakkimizda" class="wow fadeInUp">
       <div class="container">
 
-        <?php $sinif->hakkimizda($baglanti); ?>
+        <div class="row">
 
+          <div class="col-lg-6 hakkimiz-img">
+            <figcaption><img src="img/hakkimiz.jpg" alt="Hakkımızda adlı görsel: 
+          Sol elin avucu üzerinde, içinde kalın puntolu 
+          soru işareti bulunan mavi bir bulut çizimi."></figcaption>
+          </div>
+
+          <div class="col-lg-6 content">
+            <h2> Lorem Ipsum</h2>
+            <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin vehicula aliquam porta. In a metus et libero elementum vulputate.
+              Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+              posuere cubilia curae; Nullam eleifend lorem quis augue rhoncus,
+              ac lacinia nunc semper. Pellentesque ac ipsum maximus,
+              feugiat ante tincidunt, laoreet sapien. Donec lobortis venenatis diam.
+              Etiam suscipit odio ut ultrices mattis. Vestibulum ipsum ante,
+              dignissim in est quis, dictum bibendum nisl. Sed non enim sit amet
+              massa scelerisque ultrices. Praesent volutpat, diam ut volutpat
+              tempus, sem sem eleifend lacus, vitae tincidunt purus est et nisi.
+              Mauris bibendum neque risus, vitae efficitur dui gravida non.
+              Nunc et est lorem..</h3>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -129,8 +149,51 @@ $sinif = new kurumsal;
 
     <section id="hizmetler" class="wow fadeInUp">
       <div class="container">
+        <div class="section-header">
+          <h2>Hizmetlerimiz</h2>
+          <p>Yılların vermiş olduğu tecrübe ve güvenle...</p>
+        </div>
 
-        <?php $sinif->hizmetler($baglanti); ?>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay='0.2s'>
+              <div class="icon"><i class="fa fa-bar-chart"></i></div>
+              <h4 class="title"><a href="#">Lorem Ipsum 1</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin vehicula aliquam porta.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay='0.6s'>
+              <div class="icon"><i class="fa fa-map"></i></div>
+              <h4 class="title"><a href="#">Lorem Ipsum 2</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin vehicula aliquam porta.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInLeft" data-wow-delay='1s'>
+              <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+              <h4 class="title"><a href="#">Lorem Ipsum 3</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin vehicula aliquam porta.</p>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="box wow fadeInRight" data-wow-delay='1.4s'>
+              <div class="icon"><i class="fa fa-picture-o"></i></div>
+              <h4 class="title"><a href="#">Lorem Ipsum 4</a></h4>
+              <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Proin vehicula aliquam porta.</p>
+            </div>
+          </div>
+
+        </div>
+
 
       </div>
     </section>
@@ -141,12 +204,25 @@ $sinif = new kurumsal;
 
       <div class="container">
 
-      <?php $sinif->referans($baglanti); ?>
-        
-      </div>
+        <div class="section-header">
+          <h2>Referanslar</h2>
+          <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+        </div>
+
+        <div class="owl-carousel clients-carousel">
+          <img src="img/referans/ref1.png" alt="" />
+          <img src="img/referans/ref2.png" alt="" />
+          <img src="img/referans/ref3.png" alt="" />
+          <img src="img/referans/ref4.png" alt="" />
+          <img src="img/referans/ref5.png" alt="" />
+          <img src="img/referans/ref6.png" alt="" />
+          <img src="img/referans/ref7.png" alt="" />
+          <img src="img/referans/ref8.png" alt="" />
+          <img src="img/referans/ref8.png" alt="" />
+          <img src="img/referans/ref8.png" alt="" />
+          <img src="img/referans/ref8.png" alt="" />
+        </div>
     </section>
-
-
 
 
 
@@ -165,7 +241,6 @@ $sinif = new kurumsal;
             Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
           </p>
         </div>
-        
       </div>
 
 
@@ -370,8 +445,7 @@ $sinif = new kurumsal;
 
         <div class="section-header">
           <h2>İletişim</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
-            Lorem
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing Lorem
             ipsum dolor sit amet, consectetur adipiscing </p>
         </div>
 
@@ -381,9 +455,7 @@ $sinif = new kurumsal;
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Adresimiz</h3>
-              <p><a href="https://maps.app.goo.gl/uasP2U1BBwiQDdsq8">
-                  <?php echo $sinif->normaladres; ?>
-                </a></p>
+              <p><a href="https://maps.app.goo.gl/uasP2U1BBwiQDdsq8"> <?php echo $sinif-> normaladres; ?></a></p>
             </div>
           </div>
 
@@ -391,9 +463,7 @@ $sinif = new kurumsal;
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Telefon Numaramız</h3>
-              <p><a href="tel:<?php echo $sinif->telno; ?>">+
-                  <?php echo $sinif->telno; ?>
-                </a></p>
+              <p><a href="tel:<?php echo $sinif-> telno; ?>">+<?php echo $sinif-> telno ; ?></a></p>
             </div>
           </div>
 
@@ -401,9 +471,7 @@ $sinif = new kurumsal;
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Mail</h3>
-              <p><a href="mailto:<?php echo $sinif->mailadres; ?>">
-                  <?php echo $sinif->mailadres; ?>
-                </a></p>
+              <p><a href="mailto:<?php echo $sinif-> mailadres; ?>"><?php echo $sinif-> mailadres; ?></a></p>
             </div>
           </div>
 
@@ -468,8 +536,7 @@ $sinif = new kurumsal;
 
 
 
-              <div class="text-center"><input type="button" value="Gönder" id="gonderbtn" class="btn btn-info" />
-              </div>
+              <div class="text-center"><input type="button" value="Gönder" id="gonderbtn" class="btn btn-info" /></div>
 
             </form>
 
@@ -487,17 +554,15 @@ $sinif = new kurumsal;
 
     <div class="container">
       <div class="copyright">
-        <?php echo $sinif->metacopy; ?> &copy; Copyright <strong>
-          <?php echo $sinif->metaown; ?>
-        </strong>
+      <?php echo $sinif-> metacopy; ?> &copy; Copyright <strong><?php echo $sinif-> metaown; ?></strong>
       </div>
       <div class="credits">
-        <?php echo $sinif->metaaut; ?>
+      <?php echo $sinif-> metaaut; ?>
       </div>
     </div>
   </footer>
 
-  <!-- yukarı ok -->
+<!-- yukarı ok -->
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
@@ -510,7 +575,7 @@ $sinif = new kurumsal;
 
 
 
-  <!-- Kütüphaneler -->
+<!-- Kütüphaneler -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery/jquery-migrate.min.js"></script>
   <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
