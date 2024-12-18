@@ -117,7 +117,7 @@ jQuery(document).ready(function ($) {
 
 
   
-  $('.filo-popup').magnificPopup({
+  $('.araclar-popup').magnificPopup({
     type: 'image',
     removalDelay: 300,
     mainClass: 'mfp-fade',

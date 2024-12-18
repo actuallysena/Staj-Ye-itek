@@ -23,7 +23,8 @@
   <link href="lib/magnific-popup/magnific-popup.css" rel="stylesheet">
   <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
 
-  <!-- bizim stil dosyamız -->
+  <!-- css stil dosyamız -->
+
   <link href="css/style.css" rel="stylesheet">
 
 
@@ -37,8 +38,8 @@
     <div class="container clearfix">
 
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i><a href="mailto: info@udemykurumsal.com">info@udemykurumsal.com</a>
-        <i class="fa fa-phone"></i> +90 5xx xxx xx xx
+        <i class="fa fa-envelope-o"></i><a href="mailto: info@kurumsal.com">info@kurumsal.com</a>
+        <i class="fa fa-phone"></i><a href="tel:+90xxxxxxxxxx">+90xxxxxxxxxx</a>
       </div>
 
 
@@ -56,21 +57,23 @@
 
   <header id="header">
     <div class="container">
-      <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Udemy <span> Kurumsal</span></a></h1>
 
+      <div id="logo" class="pull-left">
+        <h1><a href="#body" class="scrollto">Ornek <span> Kurumsal</span></a></h1>
+        <!-- #body etiketi sayfayı yukarı atmıyor -->
       </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-
-          <li class="menu-active"><a href="#body"> Anasayfa</a></li>
+          <li class="menu-active"><a href="#topbar"> Anasayfa</a></li>
+          <!-- #body etiketi sayfayı en üste kaydırmadığı için #topbar etiketini kullanıldı -->
           <li class="menu-active"><a href="#hakkimizda"> Hakkımızda</a></li>
-          <li class="menu-active"><a href="#hizmetlerimiz"> Hizmetlerimiz</a></li>
-          <li class="menu-active"><a href="#filomuz">Araç Filomuz</a></li>
+          <li class="menu-active"><a href="#hizmetler"> Hizmetlerimiz</a></li>
+          <li class="menu-active"><a href="#araclar">Araçlar</a></li>
           <li class="menu-active"><a href="#iletisim"> İletişim</a></li>
         </ul>
       </nav>
+
     </div>
   </header>
 
@@ -92,7 +95,337 @@
       <div class="item" style="background-image:url('img/carousel/5.jpg');"></div>
     </div>
 
-  </section> id="hakkimizda"
+  </section>
+
+
+
+  <!---------- ana main ---------->
+
+  <section id="hakkimizda" class="wow fadeInUp">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-6 hakkimiz-img">
+          <figcaption><img src="img/hakkimiz.jpg" alt="Hakkımızda adlı görsel: 
+          Sol elin avucu üzerinde, içinde kalın puntolu 
+          soru işareti bulunan mavi bir bulut çizimi."></figcaption>
+        </div>
+
+        <div class="col-lg-6 content">
+          <h2> Lorem Ipsum</h2>
+          <h3> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Proin vehicula aliquam porta. In a metus et libero elementum vulputate.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Nullam eleifend lorem quis augue rhoncus,
+            ac lacinia nunc semper. Pellentesque ac ipsum maximus,
+            feugiat ante tincidunt, laoreet sapien. Donec lobortis venenatis diam.
+            Etiam suscipit odio ut ultrices mattis. Vestibulum ipsum ante,
+            dignissim in est quis, dictum bibendum nisl. Sed non enim sit amet
+            massa scelerisque ultrices. Praesent volutpat, diam ut volutpat
+            tempus, sem sem eleifend lacus, vitae tincidunt purus est et nisi.
+            Mauris bibendum neque risus, vitae efficitur dui gravida non.
+            Nunc et est lorem..</h3>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!---------- ana main ---------->
+
+  <section id="hizmetler" class="wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2>Hizmetlerimiz</h2>
+        <p>Yılların vermiş olduğu tecrübe ve güvenle...</p>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInLeft" data-wow-delay='0.2s'>
+            <div class="icon"><i class="fa fa-bar-chart"></i></div>
+            <h4 class="title"><a href="#">Lorem Ipsum 1</a></h4>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin vehicula aliquam porta.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInRight" data-wow-delay='0.6s'>
+            <div class="icon"><i class="fa fa-map"></i></div>
+            <h4 class="title"><a href="#">Lorem Ipsum 2</a></h4>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin vehicula aliquam porta.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInLeft" data-wow-delay='1s'>
+            <div class="icon"><i class="fa fa-shopping-bag"></i></div>
+            <h4 class="title"><a href="#">Lorem Ipsum 3</a></h4>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin vehicula aliquam porta.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="box wow fadeInRight" data-wow-delay='1.4s'>
+            <div class="icon"><i class="fa fa-picture-o"></i></div>
+            <h4 class="title"><a href="#">Lorem Ipsum 4</a></h4>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Proin vehicula aliquam porta.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-------- referanslar -------->
+
+  <section id="referanslar" class="wow fadeInUp">
+
+    <div class="container">
+
+      <div class="section-header">
+        <h2>Referanslar</h2>
+        <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+      </div>
+
+      <div class="owl-carousel clients-carousel">
+        <img src="img/referans/ref1.png" alt="" />
+        <img src="img/referans/ref2.png" alt="" />
+        <img src="img/referans/ref3.png" alt="" />
+        <img src="img/referans/ref4.png" alt="" />
+        <img src="img/referans/ref5.png" alt="" />
+        <img src="img/referans/ref6.png" alt="" />
+        <img src="img/referans/ref7.png" alt="" />
+        <img src="img/referans/ref8.png" alt="" />
+        <img src="img/referans/ref8.png" alt="" />
+        <img src="img/referans/ref8.png" alt="" />
+        <img src="img/referans/ref8.png" alt="" />
+      </div>
+  </section>
+
+
+
+  <!----------- Araçlar Kısmı ------------>
+
+
+
+  <section id="araclar" class="wow fadeInUp">
+
+<div class="container">
+
+
+   <div class="section-header">
+      <h2>Araçlarımız</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
+         Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
+      </p>
+   </div>
+</div>
+
+
+
+
+<div class="container">
+   <div class="row no-gutters">
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/1.jpg" class="araclar-popup">
+               <img src="img/araclar/1.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/2.jpg" class="araclar-popup">
+               <img src="img/araclar/2.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/3.jpg" class="araclar-popup">
+               <img src="img/araclar/3.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/4.jpg" class="araclar-popup">
+               <img src="img/araclar/4.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/5.jpg" class="araclar-popup">
+               <img src="img/araclar/5.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/6.jpg" class="araclar-popup">
+               <img src="img/araclar/6.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/7.jpg" class="araclar-popup">
+               <img src="img/araclar/7.jpg" alt="" />
+               <div class="araclar-overlay">
+
+               </div>
+            </a>
+         </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4">
+         <div class="araclar-item wow fadeInUp">
+            <a href="img/araclar/8.jpg" class="araclar-popup">
+               <img src="img/araclar/8.jpg" alt="" />
+               <div class="araclar-overlay">
+               </div>
+            </a>
+         </div>
+      </div>
+
+
+
+
+
+
+   </div>
+
+</div>
+</section>
+
+
+
+  <!---------- müşteri yorumları kısmı ----------->
+
+  <section id="yorumlar" class="wow fadeInUp">
+
+    <div class="container">
+
+
+      <div class="section-header">
+        <h2>Yorumlar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
+          Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur adipiscing
+        </p>
+      </div>
+
+      <div class="owl-carousel testimonials-carousel">
+
+
+        <div class="testimonial-item">
+
+          <p>
+            <img src="img/sol.png" class="quote-sign-left" />
+            Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur
+            adipiscing
+            <img src="img/sag.png" class="quote-sign-right" />
+          </p>
+          <img src="img/yorum.jpg" class="testimonial-img" alt="" />
+          <h3>İsim</h3>
+        </div>
+
+        <div class="testimonial-item">
+
+          <p>
+            <img src="img/sol.png" class="quote-sign-left" />
+            Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur
+            adipiscing
+            <img src="img/sag.png" class="quote-sign-right" />
+          </p>
+          <img src="img/yorum.jpg" class="testimonial-img" alt="" />
+          <h3>İsim</h3>
+        </div>
+
+        <div class="testimonial-item">
+
+          <p>
+            <img src="img/sol.png" class="quote-sign-left" />
+            Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur
+            adipiscing
+            <img src="img/sag.png" class="quote-sign-right" />
+          </p>
+          <img src="img/yorum.jpg" class="testimonial-img" alt="" />
+          <h3>İsim</h3>
+        </div>
+
+        <div class="testimonial-item">
+
+          <p>
+            <img src="img/sol.png" class="quote-sign-left" />
+            Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur
+            adipiscing
+            <img src="img/sag.png" class="quote-sign-right" />
+          </p>
+          <img src="img/yorum.jpg" class="testimonial-img" alt="" />
+          <h3>İsim</h3>
+        </div>
+
+        <div class="testimonial-item">
+
+          <p>
+            <img src="img/sol.png" class="quote-sign-left" />
+            Lorem ipsum dolor sit amet, consectetur adipiscingLorem ipsum dolor sit amet, consectetur
+            adipiscing
+            <img src="img/sag.png" class="quote-sign-right" />
+          </p>
+          <img src="img/yorum.jpg" class="testimonial-img" alt="" />
+          <h3>İsim</h3>
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+  <!--------------İletişim--------------->
+
 
 
 
