@@ -1,10 +1,20 @@
+<?php
+include_once("lib/fonksiyon.php");
+$sinif=new kurumsal; 
+?>
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
   <meta charset="utf-8">
-  <title>Kurumsal Web Site</title>
+  <title><?php echo $sinif->normaltitle; ?></title>
+  <meta name="title" content="<?php echo $sinif->metatitle; ?>">
+  <meta name="description" content="<?php echo $sinif->metadesc; ?>">
+  <meta name="keywords" content="<?php echo $sinif->metakey; ?>">
+  <meta name="author" content="<?php echo $sinif->metaaut; ?>">
+  <meta name="owner" content="<?php echo $sinif->metaown; ?>">
+  <meta name="copyright" content="<?php echo $sinif->metacopy; ?>"
 
 
   <!-- Fontlar -->
@@ -38,17 +48,17 @@
     <div class="container clearfix">
 
       <div class="contact-info float-left">
-        <i class="fa fa-envelope-o"></i><a href="mailto: info@kurumsal.com">info@kurumsal.com</a>
-        <i class="fa fa-phone"></i><a href="tel:+90xxxxxxxxxx">+90xxxxxxxxxx</a>
+        <i class="fa fa-envelope-o"></i><a href="mailto: <?php echo $sinif-> mailadres ; ?>"><?php echo $sinif-> mailadres ; ?></a>
+        <i class="fa fa-phone"></i><a href="tel: <?php echo $sinif-> telno ; ?>"><?php echo $sinif-> telno ; ?></a>
       </div>
 
 
       <div class="social_links float-right">
-        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-        <a href="##" class="facebook"><i class="fa fa-facebook"></i></a>
-        <a href="###" class="instagram"><i class="fa fa-instagram"></i></a>
-        <a href="####" class="linkedin"><i class="fa fa-linkedin"></i></a>
-        <a href="#####" class="github"><i class="fa fa-github"></i></a>
+        <a href="<?php echo $sinif-> twit ; ?>" class="twitter"><i class="fa fa-twitter"></i></a>
+        <a href="<?php echo $sinif-> face ; ?>" class="facebook"><i class="fa fa-facebook"></i></a>
+        <a href="<?php echo $sinif-> inst ; ?>" class="instagram"><i class="fa fa-instagram"></i></a>
+        <a href="<?php echo $sinif-> linkd ; ?>" class="linkedin"><i class="fa fa-linkedin"></i></a>
+        <a href="<?php echo $sinif-> gith ; ?>" class="github"><i class="fa fa-github"></i></a>
       </div>
     </div>
   </section>
@@ -59,7 +69,7 @@
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <h1><a href="#body" class="scrollto">Ornek <span> Kurumsal</span></a></h1>
+        <h1><a href="#body" class="scrollto"><?php echo $sinif-> logoyazi ; ?> <span> <?php echo $sinif-> logoyazisiyah ; ?></span></a></h1>
         <!-- #body etiketi sayfayı yukarı atmıyor -->
       </div>
 
@@ -83,7 +93,7 @@
   <section id="intro">
 
     <div class="intro-content">
-      <h2> Güvenle...</h2>
+      <h2><?php echo $sinif-> slogan; ?></h2>
 
     </div>
 
@@ -445,8 +455,7 @@
             <div class="contact-address">
               <i class="ion-ios-location-outline"></i>
               <h3>Adresimiz</h3>
-              <p><a href="https://maps.app.goo.gl/uasP2U1BBwiQDdsq8">Emniyet Mahallesi Milas Sokak Nu:8, 06500
-                  Yenimahalle/Ankara</a></p>
+              <p><a href="https://maps.app.goo.gl/uasP2U1BBwiQDdsq8"> <?php echo $sinif-> normaladres; ?></a></p>
             </div>
           </div>
 
@@ -454,7 +463,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>Telefon Numaramız</h3>
-              <p><a href="tel:+902121111111">+905xxxxxxxxxx</a></p>
+              <p><a href="tel:<?php echo $sinif-> telno; ?>">+<?php echo $sinif-> telno ; ?></a></p>
             </div>
           </div>
 
@@ -462,7 +471,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Mail</h3>
-              <p><a href="mailto:info@kurumsal.com">info@kurumsal.com</a></p>
+              <p><a href="mailto:<?php echo $sinif-> mailadres; ?>"><?php echo $sinif-> mailadres; ?></a></p>
             </div>
           </div>
 
@@ -545,10 +554,10 @@
 
     <div class="container">
       <div class="copyright">
-        2024 &copy; Copyright <strong>Ornek Kurumsal</strong>
+      <?php echo $sinif-> metacopy; ?> &copy; Copyright <strong><?php echo $sinif-> metaown; ?></strong>
       </div>
       <div class="credits">
-        Sena Altıparmak
+      <?php echo $sinif-> metaaut; ?>
       </div>
     </div>
   </footer>

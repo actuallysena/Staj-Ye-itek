@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
   });
   
 
-// güvenle kızmındaki resimleri sırayla çevir
+// güvenle kısmındaki resimleri sırayla çevir
   $("#intro-carousel").owlCarousel({
     autoplay: true,
     dots: false,
