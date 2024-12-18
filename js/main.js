@@ -20,8 +20,9 @@ jQuery(document).ready(function ($) {
     topSpacing: 0,
     zIndex: '50'
   });
+  
 
-
+// güvenle kızmındaki resimleri sırayla çevir
   $("#intro-carousel").owlCarousel({
     autoplay: true,
     dots: false,

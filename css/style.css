@@ -863,7 +863,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #iletisim .form #sendmessage {
   color: #885dff;
-  border: 1px solid #45adb3;
+  border: 1px solid #4e45b3;
   display: none;
   text-align: center;
   padding: 15px;
@@ -904,7 +904,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #iletisim .form button[type="submit"] {
-  background: #45adb3;
+  background: #4a45b3;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
@@ -914,7 +914,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #iletisim .form button[type="submit"]:hover {
-  background: #2dc899;
+  background: #4a45b3;
+}
+
+.btn-info {
+  color: #fff;
+  background-color: #8c59f1;
+  border-color: #8c59f1;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
 }
 
 /*--------------------------------------------------------------

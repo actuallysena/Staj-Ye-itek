@@ -1,0 +1,10 @@
+-İletişim section eklendi
+Google iframe eklendi
+
+-phpMyAdmin kuruldu
+xamp mysql ile ayarlar tablosu oluşturuldu
+tabloya girdiler yapıldı
+
+-fonksiyon.php oluşturuldu try catch ile hata yönetimi yapıldı.
+
+-
